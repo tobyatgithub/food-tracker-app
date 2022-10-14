@@ -1,0 +1,40 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["referentialIntegrity"]
+}
+
+datasource db {
+  provider             = "mysql"
+  url                  = env("DATABASE_URL")
+  referentialIntegrity = "prisma"
+}
+
+model FoodTrack {
+  id          Int      @id @default(autoincrement())
+  productName String   @db.VarChar(255)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  shopDate    String?
+  user        User     @relation(fields: [userId], references: [id])
+  price       Float
+  quantity    String?  @db.VarChar(255)
+  unitPrice   String?  @db.VarChar(255)
+  discounted  Boolean? @default(false)
+  store       String   @db.VarChar(255)
+  address     String?  @db.VarChar(255)
+  category    String?  @db.VarChar(50)
+  userId      Int
+  // profileImage String?
+}
+
+model User {
+  id        Int         @id @default(autoincrement())
+  email     String      @unique
+  nickName  String      @db.VarChar(20)
+  foodTrack FoodTrack[]
+  auth0Id   String      @unique @default("")
+  // avatar?
+}

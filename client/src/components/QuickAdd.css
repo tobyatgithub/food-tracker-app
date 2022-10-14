@@ -1,0 +1,27 @@
+.quick-add__title {
+    border-bottom: 1px solid black;
+}
+
+.quick-add__input-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.quick-add__input-element{
+    display: inline-flex;
+    align-items: center;
+    font-size: 16px;
+    gap: 10px;
+}
+
+@media (max-width: 768px) {
+    .quick-add__input-row{
+        flex-direction: column;
+    }
+}

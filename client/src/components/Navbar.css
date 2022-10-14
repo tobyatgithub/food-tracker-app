@@ -1,0 +1,45 @@
+.Navbar--welcome-name {
+  margin: auto;
+  color:white;
+}
+
+/* .navbar{
+  display:flex ;
+  flex-direction: column
+}
+
+.header {
+  border-bottom: 3px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  width: 80%
+}
+
+.menu {
+  height: 50px;
+  border-bottom: 2px solid black;
+  width: 80%
+}
+
+.menu-items {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+  align-items: center;
+  height: 100%;
+}
+
+/* 
+.main-title {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+  font-size: 42px;
+}
+
+
+
+ */ 

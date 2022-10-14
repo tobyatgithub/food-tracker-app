@@ -1,0 +1,67 @@
+.records-page {
+    margin: auto;
+    max-width: 80%;
+    margin-top: 80px;
+}
+
+Table {
+    text-align: center;
+}
+
+.record-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 80px;
+}
+
+.record-detail__basic-info {
+    display: flex;
+    justify-content: space-around;
+
+    border: 1px solid;
+    border-radius: 4px;
+}
+
+.record-detail__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+
+    border: 1px solid;
+    border-radius: 4px;
+}
+
+.record-detail__info-row {
+    display: flex;
+    justify-content: space-between;
+    background: gray;
+}
+
+.record-detail__geo-info {
+    border: 1px solid;
+    border-radius: 4px;
+}
+.record-detail__notes {
+    border: 1px solid;
+    border-radius: 4px;
+}
+.record-detail__history {
+    border: 1px solid;
+    border-radius: 4px;
+}
+
+@media (max-width: 550px) {
+    .record-detail__basic-info{
+        flex-direction: column;
+    }
+
+    .record-detail__text-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

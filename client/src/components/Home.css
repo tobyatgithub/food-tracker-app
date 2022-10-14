@@ -1,0 +1,27 @@
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.homepage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 70px;
+}
+
+.homepage--image {
+  margin-top: 20px;
+  max-width: 80%;
+  height: 50%;
+}
+
+.wrapper {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 5px;
+}

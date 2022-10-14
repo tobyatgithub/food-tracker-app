@@ -1,0 +1,68 @@
+
+
+.profile-page {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 80px;
+}
+
+.profile-page--upper-container {
+    display: flex;
+    flex-direction: row;
+    max-width: 80%;
+    margin: auto;
+    margin-top: 80px;
+    /* justify-content: space-evenly; */
+    /* align-items: center; */
+    /* margin: 50px 0 ; */
+}
+
+.profile-page--profile-image {
+    max-width: 25%;
+    max-height: 40%;
+    margin: 20px;
+}
+
+.profile-page--account-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-page--account-info-entry {
+    /* display: flex; */
+    margin-bottom: 20px;
+    justify-content:space-between
+}
+
+.profile-page--records {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px
+    
+}
+
+.profile-page--records-list table {
+    margin-left: 32px;
+    width: 90%
+    /* text-align: center; */
+}
+
+@media (max-width: 768px) {
+    .profile-page--upper-container{
+        flex-direction: column;
+    }
+
+    .profile-page--profile-image {
+        max-width: 100%;
+        max-height: 40%;
+        /* margin: 20px; */
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .profile-page--account-info {
+        overflow-wrap: break-word;
+    }
+}
