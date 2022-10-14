@@ -1,6 +1,14 @@
+.navbar-brand {
+  padding-left: 20px;
+}
+
 .Navbar--welcome-name {
   margin: auto;
-  color:white;
+  color: white;
+}
+
+.Navbar--register-button {
+  padding-right: 20px;
 }
 
 /* .navbar{
@@ -42,4 +50,4 @@
 
 
 
- */ 
+ */

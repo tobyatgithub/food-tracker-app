@@ -25,7 +25,7 @@ export default function NavbarComponent({ pageTitle }) {
         fixed="top"
         expand="sm"
       >
-        <Container>
+        <Container fluid>
           <Navbar.Brand href="/">{pageTitle}</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
@@ -39,6 +39,8 @@ export default function NavbarComponent({ pageTitle }) {
               <Nav.Link href="/profile" title="Your Profile">
                 Profile
               </Nav.Link>
+            </Nav>
+            <div className="d-flex Navbar--register-button">
               {!isAuthenticated ? (
                 <Button onClick={signUp}>Register</Button>
               ) : (
@@ -57,7 +59,7 @@ export default function NavbarComponent({ pageTitle }) {
                   Login
                 </Button>
               )}
-            </Nav>
+            </div>
           </Navbar.Collapse>
         </Container>
       </Navbar>
